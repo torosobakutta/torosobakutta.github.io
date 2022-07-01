@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Sofia&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+/* start of navigaiton area */
+.nav{
+    overflow: auto;
+    width: 85%;
+    margin: auto; /** 16px**/
+
+}
+.nav h1{
+    text-transform: uppercase;
+                /* text-transformとは
+                    text-transformとはテキストにおける英数字の大文字、
+                    小文字の表示を指定するプロパティです。以下の値で指定。
+
+                    none（初期値）変換を行いません。
+                    capitalize各単語の先頭文字のみを大文字に変換
+                    uppercase　すべての文字を大文字に変換します。
+                    lowercase すべての文字を小文字に変換します。 */
+                   
+    width: 50%;
+    float: left;
+                    /* float フロート（浮動化）を指定するプロパティ
+                    none（初期値）フロート（浮動化）なし。
+                    left
+                    ボックスを左側に寄せ、右側に後続の内容を回り込ませます。
+                    right
+                    ボックスを右側に寄せ、左側に後続の内容を回り込ませます。 */
+}
+
+.nav h1 a{
+    font-family:'Oswald', sans-serif;
+    color: brown;
+    text-decoration: none;
+                    /* text-decoration　テキストの装飾を指定するプロパティ。
+                    装飾の種類には下線、上線、取り消し線、点滅。
+                    同時に複数の装飾を行いたい場合には、値をスペースで区切って記述
+                    none 装飾なし（初期値）。
+                    underline 下線を引く。
+                    overline 上線を引く。
+                    line-through テキストに取り消し線引く。
+                    blink テキストを点滅。現在、主要なPC用ブラウザでは効果なし */
+}
+.nav ul {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top: 1em; /* em単位の値は要素が継承したfont-sizeで決まる
+                        1emの大きさ＝ブラウザーのfont-sizeのデフォルト値で決まる。
+                      　開発者やユーザーが変更しなければ、1emは16px。*/
+} 
+.nav ul li{
+    display: inline-block;
+    margin-left: 1em;
+
+}
+.nav ul a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #312a26;
+    text-decoration: none;
+}
+/* end of navigation area */
+
+/* start of banner area  */
+.banner {
+
+    background-image: url('../images/banner-bg.jpg');    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;     /*100%がMAX */
+    height: 670px;
+
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    width: 45%;
+
+}
+.banner-text h2{
+    color: #c7a17a;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-left: 1em;
+}
+.banner-text h2 span{
+    color: #96746b;
+
+}
+.banner-text p{
+    color: #fff;
+    position: relative;
+    left: 50px;
+}
+.banner-text a{
+    text-decoration: none;
+    display: inline-block; /* displayの参照https://saruwakakun.com/html-css/basic/display */
+    padding: 1em;
+    background-color: #312a26;
+    color: #fff;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    position: relative;
+    left: 50px;
+    /* ?? bottom: 10px; */
+
+}
+/* end of banner area  */
+
+
+/* start of ads area  */
+.ads{
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+
+}
+.ads-items {
+    width: 48.5%;
+    float: left;
+    height: 630px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom :3% ;
+
+}
+.ads-items1 {
+    margin-right: 3%;
+    background-image: url('../images/ads-img1.jpg');
+}
+.ads-items2{
+    background-image: url('../images/ads-img2.jpg');
+
+}
+.ads-text{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 50%;
+
+}
+.ads-text h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 3px 3px 6px #312a26;
+    line-height: 1.2em;
+
+}
+.ads-text a {
+    display: block;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight:700;  /* 100-900まであり ７００以上でBOLD扱い */
+    color: #fff;
+    text-decoration: none;
+    text-shadow:3px 3px 6px #312a26;
+}
+
+/* end of ads area  */
+/* start os merch area */
+.merch{
+    width: 85%;
+    margin: 4em auto;
+}
+.section-header{
+    text-align: center;
+
+}
+.section-header span{
+    font-family: 'Raleway' sans-serif ;
+    font-family: italic;
+    font-weight: 700;
+    color: salmon;
+}
+.section-header h2 {
+    text-transform: uppercase;
+    color: #312a26;
+}
+
+.section-header hr{
+    background-color: salmon;
+    height: 2px;
+    width:25%;
+    margin:auto;
+}
+
+.merch-gallery{
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.merch-items {
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8){
+    margin-right: 0;
+}
+
+.merch-items img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+/* end of merch area  */
+
+/* start discount area  */
+.discount {
+    width: 85%;
+    margin: 4em auto;
+    background-image: url('../images/discount-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+.discount-text{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+
+}
+.discount-text span {
+    font-family: 'Releway', sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: 3px 3px 6px #312a26;
+
+
+}
+.discount-text h3 {
+    font-size: 35px;
+    color: white;
+    font-family: 'Releway', sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+    margin-bottom: 1em;
+}
+.discount-text a {
+    text-decoration: none;
+    color:black;
+    padding: 1em;
+    background-color: #fff;
+    font-family: 'Releway',sans-serif;
+    font-weight: 700;
+}
+
+/* end of discount area  */
+/* start of merch area  */
+
+/* end of merch area  */
+/* stars of second ads area  */
+.ads-items3{
+    margin-right: 3%;
+    background-image: url('../images/ads-img3.jpg');
+    
+}
+.ads-items4{
+    
+    background-image: url('../images/ads-img3.jpg');
+
+}
+.ads-items5{
+    margin-right: 3%;
+    background-image: url('../images/ads-img5.jpg');
+
+}
+.ads-items6{
+   
+    background-image: url('../images/ads-img6.jpg');
+
+}
+
+/* end of second ads area  */
+/* start of reservation area  */
+/* .reservation{
+    width: 85%;
+    margin: 4em auto;
+}
+.form{
+    overflow: auto;
+}
+.form-group{
+    outline: 2px solid black;
+    margin-top: 4em;
+    background-color: aliceblue;    
+    width: 49.5%;
+    float: left;
+    border-radius: 5px;
+    padding: 1em;
+    height: 650px;
+}
+.form-group:nth-child(1){
+    margin-right: 1%;
+
+}
+form label,
+form input,
+form select,
+form textarea{
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'releway' sans-serif;
+
+}
+form label{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 5em;
+
+}
+.res-time{
+    text-align: center;
+
+}
+.res-time *{
+    width: auto;
+
+}
+form p{
+    text-align: center;
+    font-weight: 700;
+    margin: 1em;
+
+}
+    
+form h2,h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+form h3::after{
+    content: "";
+    background-image:url('../images/reservation-cards.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+
+}
+.res-agreement *{
+    width: auto;
+}
+form input[type="submit"]{
+    color: #c7a17a;
+    font-weight: 700;
+
+
+}
+form input[type="submit"]:hover{
+    background-color: bisque;
+    color: black;}  */
+
+    .reservation{
+        width: 85%;
+        margin: 4em auto;
+    }
+    form{
+        overflow: auto;
+    }
+    .form-group{
+        margin-top: 4em;
+        background-color: aliceblue;
+        width: 49.5%;
+        float: left;
+        border-radius: 15px;
+        padding: 1em;
+        height: 650px;
+    }
+    .form-group:nth-child(1){
+        margin-right: 1%;
+    }
+    form label,
+    form input,
+    form select,
+    form textarea{
+        display: inline-block;
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 1em;
+        font-family: 'Raleway', sans-serif;
+    }
+    form label{
+        font-weight: 700;
+        padding: 0;
+        margin-bottom: .5em;
+    }
+    .res-time{
+        text-align: center;
+    }
+    .res-time *{
+        width: auto;
+    }
+    form p{
+        text-align: center;
+        font-weight: 700;
+        margin: 1em;
+    }
+    form h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    form h3::after{
+        content: "";
+        background-image: url('../images/reservation-cards.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: 150px;
+        height: 30px;
+        margin: auto;
+    }
+    .res-agreement * {
+        width: auto;
+    }
+    form input[type="submit"]{
+        color: #C7A17A;
+        font-weight: 700;
+    }
+    form input[type="submit"]:hover{
+        background-color: bisque;
+        color: black;
+    }
+    .footer{
+        background-image: url("../images/footer-img.jpg");
+        background-size: cover;
+        background-position:center ;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .footer-contents{
+        width: 85%;
+        margin: auto;
+        overflow: auto;
+    }
+    .footer-widgets{
+        width: 24.25%;
+        float: left;
+        margin-right: 1%;
+    }
+    .footer-widgets:nth-child(4){
+        margin-right: 0;
+    }
+    .footer-widgets h3{
+        color: white;
+        text-transform: uppercase;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-shadow: 3px 3px  6px #312a26;
+    }
+    .footer-widgets h4{
+        color: white;
+
+    }
+    .footer-widgets p{
+        color: #c7a17a;
+    }
+    .footer-widgets th,td {
+        color: white;
+        font-family: 'Releway',sans-serif;
+    }
+    .footer-form * {
+        width: auto;
+
+    }
+    .footer-social{
+        color: white;
+        background-color: #312a26;
+        overflow: auto;
+        padding: 1em 7.5%;
+    }
+    .social-widget{
+        width: 32.66%;
+        float: left;
+        text-align: center;
+    }
+    .social-widget h3 {
+        text-transform: uppercase;
+    }
+    .social-widget img{
+        width: 1.5em;
+    }
+
+
+
+/* end of footer  */
+    
